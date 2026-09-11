@@ -17,6 +17,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-container > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -26,7 +36,10 @@ input, button, textarea, select {
     font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, li {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     overflow-wrap: break-word;
 }
 
@@ -64,9 +77,4 @@ h1, h2, h3, h4, h5, h6 {
     width: 100vw;
     inset: 0;
     margin-left: calc(50% - 50vw);
-}
-
-.site-container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
