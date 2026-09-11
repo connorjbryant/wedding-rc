@@ -43,11 +43,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu {
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 1rem;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.034);
+    background-color: bisque;
+}
+
+.nav-menu li {
+    z-index: 1;
+}
+
+.nav-menu::after {
+    content: "";
+    position: absolute;
+    background-color: bisque;
+    width: 100vw;
+    inset: 0;
+    margin-left: calc(50% - 50vw);
+}
+
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
