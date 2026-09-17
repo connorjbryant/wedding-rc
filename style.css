@@ -102,23 +102,27 @@ h1, h2, h3, h4, h5, h6 {
 .main-hero__inner::before {
     position: absolute;
     content: "";
-    background-image: url(images/paisley-corner.png);
+    background-image: url(images/Traditional-corner-ornament.png);
+    background-repeat: no-repeat;
     right: 0;
     top: 0%;
-    height: 600px;
-    width: 600px;
+    height: 300px;
+    width: 300px;
+    transform: rotate(180deg);
+    z-index: 998;
 }
 
 .main-hero__inner::after {
     position: absolute;
     content: "";
-    background-image: url('images/paisley-corner.png');
+    background-image: url('images/Traditional-corner-ornament.png');
+    background-repeat: no-repeat;
     left: 0;
     top: 0%;
-    height: 600px;
-    width: 600px;
-    transform: rotateX(180deg);
-    transform: rotateY(180deg);
+    height: 300px;
+    width: 300px;
+    transform: rotateX(180deg) rotateY(0deg);
+    z-index: 998;
 }
 
 .main-hero__inner--content {
@@ -129,5 +133,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-hero__inner--content {
-    background-color: rgba(0, 0, 0, 0.137)
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 2rem;
+    z-index: 999;
 }
