@@ -51,19 +51,16 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
 
-#root, #__next {
-    isolation: isolate;
-}
-
 .nav-menu {
     position: relative;
     display: flex;
     flex-direction: row;
     gap: 1rem;
     list-style-type: none;
-    padding: 0;
+    padding: 1rem 0rem 1rem 0rem;
     margin: 0;
-    background-color: bisque;
+    background-color: #FDF5EC;
+    justify-content: space-between;
 }
 
 .nav-menu li {
@@ -73,13 +70,26 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu::after {
     content: "";
     position: absolute;
-    background-color: bisque;
+    background-color: #FDF5EC;
     width: 100vw;
     inset: 0;
     margin-left: calc(50% - 50vw);
 }
 
-.main-hero {
+.main-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    background-image: url('images/proposal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: calc(50% - 50vw);
+    z-index: -1;
+}
+
+.main-hero__inner {
     position: relative;
     z-index: 2;
     width: 100vw;
@@ -89,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-.main-hero::before {
+.main-hero__inner::before {
     position: absolute;
     content: "";
     background-image: url(images/paisley-corner.png);
@@ -99,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 600px;
 }
 
-.main-hero::after {
+.main-hero__inner::after {
     position: absolute;
     content: "";
     background-image: url('images/paisley-corner.png');
@@ -111,22 +121,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotateY(180deg);
 }
 
-.main-hero__inner {
+.main-hero__inner--content {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.main-hero__inner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    width: 100vw;
-    background-image: url('images/proposal.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: calc(50% - 50vw);
-    z-index: -1;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .main-hero__inner--content {
