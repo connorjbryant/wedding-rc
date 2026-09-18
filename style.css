@@ -59,7 +59,6 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type: none;
     padding: 1rem 0rem 1rem 0rem;
     margin: 0;
-    background-color: #FDF5EC;
     justify-content: space-between;
 }
 
@@ -70,10 +69,11 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu::after {
     content: "";
     position: absolute;
-    background-color: #FDF5EC;
+    background-color: white;
     width: 100vw;
-    inset: 0;
+    height: 10%;
     margin-left: calc(50% - 50vw);
+    z-index: 999;
 }
 
 .main-hero::before {
@@ -96,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 600px;
     margin-left: calc(50% - 50vw);
     padding: 0;
-    overflow: hidden;
 }
 
 .main-hero__inner::before {
@@ -105,11 +104,12 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(images/Traditional-corner-ornament.png);
     background-repeat: no-repeat;
     right: 0;
-    top: 0%;
+    top: -20%;
     height: 300px;
     width: 300px;
     transform: rotate(180deg);
     z-index: 998;
+    opacity: 50%;
 }
 
 .main-hero__inner::after {
@@ -118,11 +118,12 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('images/Traditional-corner-ornament.png');
     background-repeat: no-repeat;
     left: 0;
-    top: 0%;
+    top: -20%;
     height: 300px;
     width: 300px;
     transform: rotateX(180deg) rotateY(0deg);
     z-index: 998;
+    opacity: 50%;
 }
 
 .main-hero__inner--content {
@@ -141,4 +142,65 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     margin-top: 2rem;
     z-index: 999;
+}
+
+@media (min-width: 1025px){
+    .nav-menu li {
+        z-index: 1;
+        padding: 1rem 2rem 3rem 2rem;
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    }
+
+    .nav-menu li:first-child {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+
+    .nav-menu li:nth-child(2){
+        background-color: rgba(255, 166, 0, 0.8);
+    }
+
+    .nav-menu li:nth-child(3){
+        background-color: rgba(255, 255, 2, 0.822);
+    }
+
+    .nav-menu li:nth-child(4){
+        background-color: rgba(0, 128, 0, 0.8);
+    }
+
+    .nav-menu li:last-child {
+        background-color: rgba(0, 0, 255, 0.8);
+    }
+}
+
+@media (max-width: 768px){
+    .nav-menu {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style-type: none;
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .nav-menu::after {
+        content: "";
+        position: absolute;
+        background-color: #FDF5EC;
+        width: 100vw;
+        inset: 0;
+        margin-left: calc(50% - 50vw);
+        height: 100%;
+        z-index: 0;
+    }
+    .main-hero__inner {
+        overflow: hidden;
+    }
+    .main-hero__inner::before {
+        top: 50%;
+    }
+
+    .main-hero__inner::after {
+        top: 50%;
+    }
 }
