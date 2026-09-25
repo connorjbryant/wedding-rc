@@ -4,6 +4,7 @@
 
 *:not(dialog){
     margin: 0;
+    padding: 0;
 }
 
 @media (prefers-reduced-motion: no-preference){
@@ -20,6 +21,7 @@ body {
 .site-container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .site-container > * {
@@ -96,9 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-hero__inner {
     position: relative;
     z-index: 2;
-    width: 100vw;
     height: 600px;
-    margin-left: calc(50% - 50vw);
     padding: 0;
 }
 
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .nav-menu {
         position: relative;
         display: flex;
@@ -199,12 +199,19 @@ h1, h2, h3, h4, h5, h6 {
     }
     .main-hero__inner {
         overflow: hidden;
+        position: relative;
     }
     .main-hero__inner::before {
         top: 50%;
+        left: 0;
+        transform: none;
+        width: auto;
     }
 
     .main-hero__inner::after {
         top: 50%;
+        right: 0;
+        transform: rotateY(180deg);
+        width: auto;
     }
 }
