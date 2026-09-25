@@ -185,33 +185,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1025px){
-    p, li {
+    p {
         font-size: 1.25rem;
+    }
+    li {
+        font-size: 1.5rem;
     }
     .nav-menu li {
         z-index: 1;
         padding: 1rem 2rem 3rem 2rem;
-        clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+        clip-path: polygon(50% 0%, 100% 0%, 100% 25%, 50% 100%, 0% 25%, 0% 0%);
     }
 
     .nav-menu li:first-child {
-        background-color: rgba(255, 0, 0, 0.8);
+        background-color: rgba(255, 121, 121, 0.9);
     }
 
     .nav-menu li:nth-child(2){
-        background-color: rgba(255, 166, 0, 0.8);
+        background-color: rgba(255, 217, 146, 0.9);
     }
 
     .nav-menu li:nth-child(3){
-        background-color: rgba(255, 255, 2, 0.822);
+        background-color: rgba(255, 255, 148, 0.9);
     }
 
     .nav-menu li:nth-child(4){
-        background-color: rgba(0, 128, 0, 0.8);
+        background-color: rgba(150, 255, 150, 0.9);
     }
 
     .nav-menu li:last-child {
-        background-color: rgba(0, 0, 255, 0.8);
+        background-color: rgba(197, 197, 255, 0.9);
     }
 }
 
