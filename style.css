@@ -13,9 +13,17 @@
     }
 }
 
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 .site-container {
@@ -144,6 +152,10 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     margin-top: 2rem;
     z-index: 999;
+}
+
+.content-area-1 {
+    background-color: white;
 }
 
 @media (min-width: 1025px){
