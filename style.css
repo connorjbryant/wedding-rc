@@ -38,7 +38,7 @@ body {
 }
 
 img, picture, video, canvas, svg {
-    display: block;
+    /* display: block; */
     max-width: 100%;
 }
 
@@ -143,7 +143,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-radius: 16px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-align: center;
     position: relative;
     background-color: white;
     display: flex;
@@ -155,10 +159,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-area-1 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
     background-color: white;
 }
 
+.content-area-1 div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+}
+
+.content-area-1__left img {
+    clip-path: 
+    shape(
+      from 50% 91%,
+      line to 90% 50%,
+      arc to 50% 9%  of 1%,
+      arc to 10% 50% of 1%
+    );
+    aspect-ratio: 1;
+}
+
 @media (min-width: 1025px){
+    p, li {
+        font-size: 1.25rem;
+    }
     .nav-menu li {
         z-index: 1;
         padding: 1rem 2rem 3rem 2rem;
@@ -223,5 +252,9 @@ h1, h2, h3, h4, h5, h6 {
         right: 0;
         transform: rotateY(180deg);
         width: auto;
+    }
+    .content-area-1 {
+        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
