@@ -105,29 +105,29 @@ h1, h2, h3, h4, h5, h6 {
 .main-hero__inner::before {
     position: absolute;
     content: "";
-    background-image: url(images/Traditional-corner-ornament.png);
+    background-image: url(images/Traditional-corner-ornament-filtered.png);
     background-repeat: no-repeat;
     right: 0;
-    top: -20%;
-    height: 300px;
-    width: 300px;
+    top: 0%;
+    height: 600px;
+    width: 600px;
     transform: rotate(180deg);
     z-index: 998;
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .main-hero__inner::after {
     position: absolute;
     content: "";
-    background-image: url('images/Traditional-corner-ornament.png');
+    background-image: url('images/Traditional-corner-ornament-filtered.png');
     background-repeat: no-repeat;
     left: 0;
-    top: -20%;
-    height: 300px;
-    width: 300px;
+    top: 0%;
+    height: 600px;
+    width: 600px;
     transform: rotateX(180deg) rotateY(0deg);
     z-index: 998;
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .main-hero__inner--content {
@@ -135,9 +135,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-.main-hero__inner--content {
+    border-radius: 16px;
     position: relative;
     background-color: white;
     display: flex;
