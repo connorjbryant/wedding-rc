@@ -184,7 +184,14 @@ h1, h2, h3, h4, h5, h6 {
     aspect-ratio: 1;
 }
 
+.content-area-1__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .content-area-1__right h3 {
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -223,6 +230,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+}
+
+#clock .t-done {
+    font-weight: 700;
 }
 
 @media (min-width: 1025px){
