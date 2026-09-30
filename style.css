@@ -229,14 +229,17 @@ aside.t-block::before {
 }
 
 aside.t-block:nth-child(1)::after {
-    position: absolute;
     content: "";
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
     background-image: url('images/candleCake.png');
     background-repeat: no-repeat;
-    left: 0%;
-    right: 0;
-    bottom: 0;
-    top: -100%;
+    background-position: center bottom;
+    background-size: contain;
     z-index: -1;
 }
 
@@ -370,14 +373,17 @@ aside.t-block:nth-child(1)::after {
         flex-direction: column-reverse;
     }
     aside.t-block:nth-child(1)::after {
-        position: absolute;
         content: "";
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100px;
         background-image: url('images/candleCake.png');
         background-repeat: no-repeat;
-        left: -10%;
-        right: 0;
-        bottom: 0;
-        top: -100%;
+        background-position: center bottom;
+        background-size: contain;
         z-index: -1;
     }
 }
