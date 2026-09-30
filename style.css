@@ -196,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-area-1__right--timer {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -203,8 +204,64 @@ h1, h2, h3, h4, h5, h6 {
 /* Timer */
 #clock {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0rem;
     justify-content: center;
+    margin-top: 6rem;
+}
+
+#clock aside {
+    position: relative;
+    flex-direction: column;
+}
+
+aside.t-block {
+    position: relative;
+}
+
+aside.t-block::before {
+    position: absolute;
+    content: "";
+    background-color: pink;
+    z-index: 999;
+    inset: 0;
+    height: 10%;
+}
+
+aside.t-block:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    background-image: url('images/candleCake.png');
+    background-repeat: no-repeat;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    top: -100%;
+    z-index: -1;
+}
+
+#clock aside:nth-child(1){
+    position: relative;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#clock aside:nth-child(2){
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#clock aside:nth-child(3){
+    position: relative;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 #clock .t-block {
@@ -311,5 +368,16 @@ h1, h2, h3, h4, h5, h6 {
     .content-area-1 {
         flex-direction: column;
         flex-direction: column-reverse;
+    }
+    aside.t-block:nth-child(1)::after {
+        position: absolute;
+        content: "";
+        background-image: url('images/candleCake.png');
+        background-repeat: no-repeat;
+        left: -10%;
+        right: 0;
+        bottom: 0;
+        top: -100%;
+        z-index: -1;
     }
 }
