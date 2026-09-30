@@ -47,7 +47,7 @@ input, button, textarea, select {
     font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6, li {
+p, h1, h2, h3, h4, h5, h6, li, aside {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -351,6 +351,9 @@ aside.t-block:nth-child(1)::after {
         height: 100%;
         z-index: 0;
     }
+    .nav-menu li {
+        font-weight: bold;
+    }
     .main-hero__inner {
         overflow: hidden;
         position: relative;
@@ -371,6 +374,9 @@ aside.t-block:nth-child(1)::after {
     .content-area-1 {
         flex-direction: column;
         flex-direction: column-reverse;
+    }
+    #clock {
+        margin-top: 4rem;
     }
     aside.t-block:nth-child(1)::after {
         content: "";
