@@ -373,6 +373,9 @@ footer::after {
 }
 
 @media (max-width: 768px){
+    header {
+        border-bottom: 1px solid black;
+    }
     .nav-menu {
         position: relative;
         display: flex;
