@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu li {
     z-index: 1;
+    font-weight: bold;
 }
 
 .nav-menu::after {
@@ -157,6 +158,10 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     margin-top: 6rem;
     z-index: 999;
+}
+
+.main-hero__inner--content h1, .main-hero__inner--content h2 {
+    color: rgb(70, 70, 70);
 }
 
 .content-area-1 {
@@ -396,9 +401,7 @@ footer::after {
         height: 100%;
         z-index: 0;
     }
-    .nav-menu li {
-        font-weight: bold;
-    }
+
     .main-hero__inner {
         overflow: hidden;
         position: relative;
