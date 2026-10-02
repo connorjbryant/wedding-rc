@@ -47,7 +47,7 @@ input, button, textarea, select {
     font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6, li, aside {
+p, h1, h2, h3, h4, h5, h6, li, aside, footer {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -165,12 +165,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     gap: 1rem;
     margin-top: 2rem;
-}
-
-.content-area-1 div {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 50%;
 }
 
 .content-area-1__left img {
@@ -296,8 +290,55 @@ aside.t-block:nth-child(1)::after {
     font-weight: 700;
 }
 
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #e6ae8c; /* fallback for old browswers */
+    background: -webkit-linear-gradient(to right, #a8cecf, #e6ae8c); /* Chrome, Safari */
+    background: linear-gradient(to right, #a8cecf, #e6ae8c); /* IE/Edge, Firefox, Chrome, Opera, old Safari */
+}
+
+footer::before {
+    position: absolute;
+    content: "";
+    background-color: #a8cecf;
+    width: 50vw;
+    height: 100px;
+    left: calc(50% - 50vw);
+    z-index: -1;
+}
+
+footer::after {
+    position: absolute;
+    content: "";
+    background-color: #e6ae8c;
+    width: 50vw;
+    height: 100px;
+    right: calc(50% - 50vw);
+    z-index: -1;
+}
+
+.icon-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: white;
+}
+
+.icon-container i {
+    font-size: 100%;
+    color: white;
+    font-size: 50px;
+}
+
 @media (min-width: 1025px){
-    p {
+    p, footer {
         font-size: 1.25rem;
     }
     li {
@@ -373,7 +414,6 @@ aside.t-block:nth-child(1)::after {
     }
     .content-area-1 {
         flex-direction: column;
-        flex-direction: column-reverse;
     }
     #clock {
         margin-top: 4rem;
