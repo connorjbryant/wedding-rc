@@ -338,7 +338,7 @@ footer::after {
     font-size: 50px;
 }
 
-@media (min-width: 1025px){
+@media (min-width: 769px){
     p, footer {
         font-size: 1.25rem;
     }
@@ -372,7 +372,7 @@ footer::after {
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 768px){
     .nav-menu {
         position: relative;
         display: flex;
@@ -401,17 +401,21 @@ footer::after {
         position: relative;
     }
     .main-hero__inner::before {
-        top: 50%;
+        background-image: url(images/Traditional-corner-ornament-filtered-mobile.jpg);
+        top: 40%;
         left: 0;
         transform: none;
         width: auto;
+        clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%);
     }
 
     .main-hero__inner::after {
-        top: 50%;
+        background-image: url(images/Traditional-corner-ornament-filtered-mobile.jpg);
+        top: 40%;
         right: 0;
         transform: rotateY(180deg);
         width: auto;
+        clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%);
     }
     .content-area-1 {
         flex-direction: column;
