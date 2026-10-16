@@ -349,7 +349,7 @@ footer::after {
     font-size: 50px;
 }
 
-@media (min-width: 769px){
+@media (min-width: 1025px){
     p, footer {
         font-size: 1.25rem;
     }
@@ -387,7 +387,7 @@ footer::after {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     header {
         border-bottom: 1px solid black;
     }
