@@ -430,6 +430,9 @@ footer::after {
 }
 
 @media (max-width: 1024px){
+    h1 {
+        font-size: 2.5rem;
+    }
     header {
         border-bottom: 1px solid black;
     }
