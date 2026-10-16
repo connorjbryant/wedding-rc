@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     inset: 0;
     width: 100vw;
-    background-image: url('images/proposal.jpg');
+    background-image: url('images/proposal.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -294,6 +294,8 @@ aside.t-block:nth-child(1)::after {
 #clock .t-done {
     font-weight: 700;
 }
+
+/* About */
 
 footer {
     position: relative;
