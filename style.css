@@ -48,7 +48,21 @@ input, button, textarea, select {
     font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6, li, aside, footer {
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    font-size: 3rem;
+}
+
+li {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+p, h2, h3, h4, h5, h6, aside, footer {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -75,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a {
     color: black;
+    text-decoration: none;
 }
 
 .nav-menu li {
@@ -164,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 999;
 }
 
-.main-hero__inner--content h1, .main-hero__inner--content h2 {
+.main-hero__inner--content h1, .main-hero__inner--content h2, .mid-cen-modern-top h1, .mid-cen-modern-top h2 {
     color: rgb(70, 70, 70);
 }
 
@@ -300,6 +315,33 @@ aside.t-block:nth-child(1)::after {
 }
 
 /* About */
+.mid-cen-modern-top {
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.mid-cen-modern-top::after {
+    position: absolute;
+    content: "";
+    background-color: #FDF5EC;
+    width: 100vw;
+    height: 100%;
+    left: calc(50% - 50vw);
+    z-index: -1;
+}
+
+.mid-cen-modern-top__left {
+    background-color: #a8cecf;
+    flex: 0 0 40%; /* Do not grow, do not shrink, start at 40% */
+    padding-top: 100px;
+    padding-left: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mid-cen-modern-top__right {
+    flex: 0 0 60%; /* Do no grow or shrink and start at 60% */
+}
 
 footer {
     position: relative;
