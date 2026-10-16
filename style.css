@@ -73,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
+.nav-menu a {
+    color: black;
+}
+
 .nav-menu li {
     z-index: 1;
     font-weight: 600;
@@ -374,8 +378,12 @@ footer::after {
         background-color: rgba(150, 255, 150, 0.9);
     }
 
-    .nav-menu li:last-child {
+    .nav-menu li:nth-child(5){
         background-color: rgba(197, 197, 255, 0.9);
+    }
+
+    .nav-menu li:last-child {
+        background-color: rgba(237, 197, 255, 0.9);
     }
 }
 
