@@ -555,6 +555,6 @@ footer::after {
 
     .mid-cen-modern-top__left img {
         padding-top: 1rem;
-        max-width: 90%;
+        max-width: 100%;
     }
 }
