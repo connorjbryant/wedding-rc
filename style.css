@@ -540,6 +540,9 @@ footer::after {
         background-size: contain;
         z-index: -1;
     }
+    .mid-cen-modern-top__left, .mid-cen-modern-top__right {
+        flex: 0 0 50%;
+    }
     .pushpin-photo {
         padding: 4px;
     }
