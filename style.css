@@ -385,6 +385,19 @@ aside.t-block:nth-child(1)::after {
     z-index: 999;
 }
 
+/* Photo Gallery */
+.photo-gallery {
+    padding-top: 100px;
+}
+
+.photo-gallery__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 footer {
     position: relative;
     display: flex;
@@ -556,5 +569,9 @@ footer::after {
     .mid-cen-modern-top__left img {
         padding-top: 1rem;
         max-width: 100%;
+    }
+
+    .photo-gallery__inner {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
