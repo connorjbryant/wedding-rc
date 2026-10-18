@@ -352,7 +352,7 @@ aside.t-block:nth-child(1)::after {
     flex-direction: column;
     padding-top: 100px;
     background: url('images/cork-board.jpg');
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
