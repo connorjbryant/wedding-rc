@@ -333,14 +333,53 @@ aside.t-block:nth-child(1)::after {
 
 .mid-cen-modern-top__left {
     background-color: #a8cecf;
-    flex: 0 0 40%; /* Do not grow, do not shrink, start at 40% */
+    flex: 0 0 60%; /* Do not grow, do not shrink, start at 80% */
     padding-top: 100px;
+    padding-bottom: 1rem;
     padding-left: 1rem;
+    padding-right: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.mid-cen-modern-top__left img {
+    padding-top: 1rem;
+    max-width: 70%;
+}
+
 .mid-cen-modern-top__right {
-    flex: 0 0 60%; /* Do no grow or shrink and start at 60% */
+    display: flex;
+    flex: 0 0 40%; /* Do no grow or shrink and start at 20% */
+    padding-top: 100px;
+    background: url('images/cork-board.jpg');
+    justify-content: center;
+}
+
+.pushpin-photo {
+    position: relative;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: white;
+    max-width: 80%;
+    height: fit-content;
+}
+
+.pushpin-photo__top {
+    position: relative;
+    height: 50px;
+    padding-top: 0;
+    margin: 0;
+}
+
+.pushpin-photo__top::after {
+    position: absolute;
+    content: "";
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/pushpin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 999;
 }
 
 footer {
@@ -498,5 +537,14 @@ footer::after {
         background-position: center bottom;
         background-size: contain;
         z-index: -1;
+    }
+    .pushpin-photo {
+        padding: 4px;
+    }
+    .pushpin-photo__top {
+        position: relative;
+        height: 25px;
+        padding-top: 0;
+        margin: 0;
     }
 }
