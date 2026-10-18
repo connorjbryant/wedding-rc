@@ -393,8 +393,7 @@ footer {
     align-items: center;
     height: 100px;
     background: #e6ae8c; /* fallback for old browswers */
-    background: -webkit-linear-gradient(to right, #a8cecf, #e6ae8c); /* Chrome, Safari */
-    background: linear-gradient(to right, #a8cecf, #e6ae8c); /* IE/Edge, Firefox, Chrome, Opera, old Safari */
+    background: linear-gradient(to right, #a8cecf 0%, #FFFFFF 50%, #e6ae8c 100%);
 }
 
 footer::before {
@@ -422,14 +421,14 @@ footer::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     font-weight: bold;
     text-align: center;
 }
 
 .icon-container i {
     font-size: 100%;
-    color: white;
+    color: black;
     font-size: 50px;
 }
 
