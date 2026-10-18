@@ -360,6 +360,7 @@ aside.t-block:nth-child(1)::after {
     background-color: white;
     max-width: 80%;
     height: fit-content;
+    margin-bottom: 1rem;
 }
 
 .pushpin-photo__top {
