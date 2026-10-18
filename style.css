@@ -349,9 +349,11 @@ aside.t-block:nth-child(1)::after {
 .mid-cen-modern-top__right {
     display: flex;
     flex: 0 0 40%; /* Do no grow or shrink and start at 20% */
+    flex-direction: column;
     padding-top: 100px;
     background: url('images/cork-board.jpg');
     justify-content: center;
+    align-items: center;
 }
 
 .pushpin-photo {
@@ -547,5 +549,10 @@ footer::after {
         height: 25px;
         padding-top: 0;
         margin: 0;
+    }
+
+    .mid-cen-modern-top__left img {
+        padding-top: 1rem;
+        max-width: 90%;
     }
 }
