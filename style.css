@@ -62,7 +62,7 @@ li {
     font-style: normal;
 }
 
-p, h2, h3, h4, h5, h6, aside, footer {
+p, h2, h3, h4, h5, h6, aside, button, footer {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -390,12 +390,33 @@ aside.t-block:nth-child(1)::after {
     padding-top: 100px;
 }
 
+.photo-gallery__options {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.photo-gallery__options button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+}
+
+.photo-gallery__options button.active {
+    background-color: white;
+}
+
+.photo-gallery__outer {
+    background-color: white;
+    padding: 1rem;
+}
+
 .photo-gallery__inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 footer {
