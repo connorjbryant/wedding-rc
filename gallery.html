@@ -9,8 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body class="site-container">
         <header>
@@ -28,15 +28,21 @@
         <section class="photo-gallery">
             <h1>Photo Gallery</h1>
             <div class="photo-gallery__options">
-                <button class="active">Engagement Photos</button>
-                <button>The Story So Far</button>
+                <button class="active" data-count="1">Engagement Photos</button>
+                <button data-count="2">The Story So Far</button>
             </div>
             <div class="photo-gallery__outer">
-                <div class="photo-gallery__inner">
+                <div class="photo-gallery__inner active" data-count="1">
                     <a href="images/bw-engaged.jpg" data-lightbox="engagement-photos" data-title=""><img src="images/bw-engaged.jpg" alt="Engaged" width="100%" height="100%"></a>
                     <a href="images/bw-engaged.jpg" data-lightbox="engagement-photos" data-title=""><img src="images/bw-engaged.jpg" alt="Engaged" width="100%" height="100%"></a>
                     <a href="images/bw-engaged.jpg" data-lightbox="engagement-photos" data-title=""><img src="images/bw-engaged.jpg" alt="Engaged" width="100%" height="100%"></a>
                     <a href="images/bw-engaged.jpg" data-lightbox="engagement-photos" data-title=""><img src="images/bw-engaged.jpg" alt="Engaged" width="100%" height="100%"></a>
+                </div>
+                <div class="photo-gallery__inner" data-count="2">
+                    <a href="images/us.jpg" data-lightbox="story-photos" data-title=""><img src="images/us.jpg" alt="Engaged" width="100%" height="100%"></a>
+                    <a href="images/us.jpg" data-lightbox="story-photos" data-title=""><img src="images/us.jpg" alt="Engaged" width="100%" height="100%"></a>
+                    <a href="images/us.jpg" data-lightbox="story-photos" data-title=""><img src="images/us.jpg" alt="Engaged" width="100%" height="100%"></a>
+                    <a href="images/us.jpg" data-lightbox="story-photos" data-title=""><img src="images/us.jpg" alt="Engaged" width="100%" height="100%"></a>
                 </div>
             </div>
         </section>
