@@ -394,6 +394,7 @@ aside.t-block:nth-child(1)::after {
 .photo-gallery__options {
     display: flex;
     width: 100%;
+    justify-content: center;
     margin-top: 2rem;
     gap: 1rem;
 }
@@ -409,11 +410,13 @@ aside.t-block:nth-child(1)::after {
     border-right: 1px solid gray;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
     z-index: 1;
 }
 
 .photo-gallery__options button.active {
     background-color: white;
+    opacity: 1;
 }
 
 .photo-gallery__options button.active::after {
