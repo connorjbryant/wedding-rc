@@ -443,6 +443,12 @@ aside.t-block:nth-child(1)::after {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    object-fit: cover;
+}
+
+.photo-gallery__inner.active img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .photo-gallery__inner {
