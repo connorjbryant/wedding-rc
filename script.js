@@ -12,6 +12,34 @@ $(function(){
         galleryButton.toggleClass("active");
     });
 
+    /* Loading animation while images load - gallery */
+    $(".photo-gallery__inner img").each(function(){
+        var img = $(this);
+
+        // Check if image is already cached/loaded by browswer
+        if (img[0].complete){
+            handleImageLoad(img);
+        } else {
+            // Trigger when image is finished downloading
+            img.on("load", function(){
+                handleImageLoad(img);
+            }).on("error", function(){
+                img.siblings(".loader").html('<p>Error</p>');
+            });
+        }
+    });
+
+    // Helper function to swap loader for image
+    function handleImageLoad(imageElement){
+        // Hide or show loader next to imae
+        imageElement.siblings(".loader").fadeOut(200, function(){
+            $(this).remove();
+        });
+
+        // Fade in loaded photo
+        imageElement.fadeIn(400);
+    }
+
     /* Wedding Countdown */
     $("#clock").countdown('2027/05/02 23:59:59', function(event) {
         $(this).html(event.strftime(''
