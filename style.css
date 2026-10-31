@@ -491,6 +491,26 @@ aside.t-block:nth-child(1)::after {
     text-wrap: pretty;
 }
 
+.alert {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1000;
+    max-width: 15ch;
+    background-color: rgba(255, 255, 148, 0.9);
+    padding: 1rem;
+    border-radius: 25%;
+    text-align: center;
+    border: 1px solid gray;
+    animation: pulse 2.5s linear infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 footer {
     position: relative;
     display: flex;
