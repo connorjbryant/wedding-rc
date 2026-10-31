@@ -51,4 +51,17 @@ $(function(){
             $(this).html('<span class="t-done">The wait is over! Rochelle and Connor are married now.</span>');
         });
     });
+
+    /* FAQ accordions */
+    const question = $(".faqs a");
+
+    question.on("click keydown", function(e){
+        /* Toggle the accordion on click or enter button */
+        if (e.type === "click" || e.key === "Enter" || e.keyCode === 13){
+            e.preventDefault();
+            /* Use find because the answer is inside $this (a tag) */
+            $(this).find(".faqs__a").toggle();
+            $(this).find(".faqs__q").toggleClass("faqActive");
+        }
+    });
 });

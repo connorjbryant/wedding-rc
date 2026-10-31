@@ -505,15 +505,47 @@ aside.t-block:nth-child(1)::after {
 .faqs {
     padding-top: 100px;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .faqs__q {
+    width: 100%;
+    position: relative;
     font-size: 1.25rem;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     overflow-wrap: break-word;
     text-wrap: pretty;
+    text-decoration: underline;
+}
+
+.faqs__q::after {
+    position: absolute;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    content: "\f078";
+    margin-left: 8px;
+    color: black;
+}
+
+.faqs__q.faqActive::after {
+    position: absolute;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    content: "\f077";
+    margin-left: 8px;
+    color: black;
+}
+
+.faqs__a {
+    display: none;
 }
 
 .alert {
