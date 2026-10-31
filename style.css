@@ -455,6 +455,11 @@ aside.t-block:nth-child(1)::after {
     display: none;
 }
 
+/* FAQs */
+.faqs {
+    
+}
+
 footer {
     position: relative;
     display: flex;
