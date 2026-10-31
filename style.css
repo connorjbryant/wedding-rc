@@ -478,7 +478,17 @@ aside.t-block:nth-child(1)::after {
 
 /* FAQs */
 .faqs {
+    padding-top: 100px;
+    margin-bottom: 1rem;
+}
 
+.faqs__q {
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
 }
 
 footer {
