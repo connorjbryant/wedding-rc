@@ -509,6 +509,10 @@ aside.t-block:nth-child(1)::after {
     width: 100%;
 }
 
+.faqs h1 {
+    margin-bottom: 1rem;
+}
+
 .faqs a {
     width: 100%;
     padding: 1rem;
