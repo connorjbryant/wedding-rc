@@ -535,6 +535,7 @@ aside.t-block:nth-child(1)::after {
 
 .faqs__q::after {
     position: absolute;
+    top: 0;
     right: 0;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
