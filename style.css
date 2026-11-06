@@ -385,8 +385,8 @@ aside.t-block:nth-child(1)::after {
     z-index: 999;
 }
 
-/* Photo Gallery */
-.photo-gallery {
+/* Photo Gallery, Registry, Games */
+.photo-gallery, .registry, .games {
     padding-top: 100px;
     margin-bottom: 1rem;
 }
