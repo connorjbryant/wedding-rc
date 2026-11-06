@@ -517,7 +517,6 @@ aside.t-block:nth-child(1)::after {
     color: black;
     width: 100%;
     padding: 1rem;
-    font-size: 1.25rem;
     background-color: white;
     margin-bottom: 1rem;
     background: -moz-linear-gradient(top, #fff 1%, #eaeaea 100%);
@@ -532,7 +531,6 @@ aside.t-block:nth-child(1)::after {
     color: black;
     width: 100%;
     position: relative;
-    font-size: 1.25rem;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -669,12 +667,11 @@ footer::after {
 
 .registry a {
     color: black;
-    font-size: 1.25rem;
     font-family: "Raleway", sans-serif;
 }
 
 @media (min-width: 1025px){
-    p, footer {
+    p, footer, .accordions a, .accordions__q, .registry a {
         font-size: 1.25rem;
     }
     li {
