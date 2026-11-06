@@ -500,8 +500,8 @@ aside.t-block:nth-child(1)::after {
     display: none;
 }
 
-/* FAQs */
-.faqs {
+/* Accordions */
+.accordions {
     padding-top: 100px;
     margin-bottom: 1rem;
     display: flex;
@@ -509,11 +509,11 @@ aside.t-block:nth-child(1)::after {
     width: 100%;
 }
 
-.faqs h1 {
+.accordions h1 {
     margin-bottom: 1rem;
 }
 
-.faqs a {
+.accordions a {
     width: 100%;
     padding: 1rem;
     font-size: 1.25rem;
@@ -527,7 +527,7 @@ aside.t-block:nth-child(1)::after {
     background: linear-gradient(top, #fff 1%, #eaeaea 100%);
 }
 
-.faqs__q {
+.accordions__q {
     color: black;
     width: 100%;
     position: relative;
@@ -540,7 +540,7 @@ aside.t-block:nth-child(1)::after {
     cursor: pointer;
 }
 
-.faqs__q::after {
+.accordions__q::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -552,7 +552,7 @@ aside.t-block:nth-child(1)::after {
     color: black;
 }
 
-.faqs__q.faqActive::after {
+.accordions__q.faqActive::after {
     position: absolute;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -563,12 +563,12 @@ aside.t-block:nth-child(1)::after {
     color: black;
 }
 
-.faqs__amazon {
+.accordions__amazon {
     position: relative;
     color: black;
 }
 
-.faqs__amazon::after {
+.accordions__amazon::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -581,7 +581,7 @@ aside.t-block:nth-child(1)::after {
     color: black;
 }
 
-.faqs__a {
+.accordions__a {
     display: none;
     margin-top: 0.5rem;
 }
@@ -805,7 +805,7 @@ footer::after {
     .photo-gallery__inner {
         grid-template-columns: repeat(2, 1fr);
     }
-    .faqs a {
+    .accordions a {
         width: 100%;
     }
 }

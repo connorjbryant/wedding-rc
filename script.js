@@ -53,15 +53,15 @@ $(function(){
     });
 
     /* FAQ accordions */
-    const question = $(".faqs .js-faq");
+    const question = $(".accordions .js-accordion");
 
     question.on("click keydown", function(e){
         /* Toggle the accordion on click or enter button */
         if (e.type === "click" || e.key === "Enter" || e.keyCode === 13){
             e.preventDefault();
             /* Use find because the answer is inside $this (a tag) */
-            $(this).find(".faqs__a").toggle();
-            $(this).find(".faqs__q").toggleClass("faqActive");
+            $(this).find(".accordions__a").toggle();
+            $(this).find(".accordions__q").toggleClass("faqActive");
         }
     });
 });
