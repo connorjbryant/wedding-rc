@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sliding-puzzle.css">
     </head>
     <body class="site-container">
         <header>
@@ -26,19 +27,25 @@
         </header>
         <section class="games">
             <h1>Games</h1>
-            <div id="puzzle">
-                <figure>
-                    <img src="images/slide-puzzle-scrambled.png" alt="Puzzle" />
-                </figure>
-                <div id="ui">
+            <div id="puzzle" class="clearfix">
+                <div>
+                    <h2>Image Unscramble</h2>
+                    <figure>
+                        <img src="images/slide-puzzle-scrambled.png" alt="Puzzle" />
+                    </figure>
                     <button id="start">Start!</button>
                 </div>
+                
+                <div id="ui">
+                    <p>Your goal is to unscramble the slide-puzzle by clicking on the tiles so they move around. The image below is how the completed puzzle should look.</p>
+                    <img src="images/slide-puzzle-scrambled.png" alt="Puzzle">
+                </div>
             </div>
-            <br>
-            <p>Another game is coming soon!</p>
+            <p>Come back soon! Another game will be posted shortly.</p>
         </section>
         <script src="jquery-4.0.0.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
+        <script src="js/sliding-puzzle.js"></script>
         <footer>
             <div class="icon-container">
                 <i class="fa-regular fa-heart"></i>Rochelle and Connor's Wedding | May 2, 2027<i class="fa-regular fa-heart"></i>

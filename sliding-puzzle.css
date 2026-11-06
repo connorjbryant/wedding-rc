@@ -1,0 +1,68 @@
+.games div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#puzzle {
+    padding: 1rem;
+    background-color: #eee;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+#puzzle figure {
+    width: 326px;
+    height: 327px;
+    border: 1px solid #aaa;
+    position: relative;
+    float: left;
+    background-color: white;
+}
+
+#ui {
+    width: 326px;
+    padding: 10px 0 0 10px;
+}
+
+#start {
+    width: 200px;
+    height: 50px;
+}
+
+.puzzle {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+}
+
+.puzzle__container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px){
+    #puzzle {
+        flex-direction: column;
+    }
+}
+
+/* Individual puzzle pieces */
+#puzzle figure .tile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Empty space */
+#puzzle figure .empty {
+    background: none !important;
+    cursor: default;
+}
