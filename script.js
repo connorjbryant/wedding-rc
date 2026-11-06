@@ -53,7 +53,7 @@ $(function(){
     });
 
     /* FAQ accordions */
-    const question = $(".faqs a");
+    const question = $(".faqs .js-faq");
 
     question.on("click keydown", function(e){
         /* Toggle the accordion on click or enter button */

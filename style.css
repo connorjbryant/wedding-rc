@@ -385,8 +385,8 @@ aside.t-block:nth-child(1)::after {
     z-index: 999;
 }
 
-/* Photo Gallery, Registry, Games */
-.photo-gallery, .registry, .games {
+/* Photo Gallery, Games */
+.photo-gallery, .games {
     padding-top: 100px;
     margin-bottom: 1rem;
 }
@@ -528,6 +528,7 @@ aside.t-block:nth-child(1)::after {
 }
 
 .faqs__q {
+    color: black;
     width: 100%;
     position: relative;
     font-size: 1.25rem;
@@ -558,6 +559,24 @@ aside.t-block:nth-child(1)::after {
     font-family: "Font Awesome 7 Free";
     font-weight: 900;
     content: "\f077";
+    margin-left: 8px;
+    color: black;
+}
+
+.faqs__amazon {
+    position: relative;
+    color: black;
+}
+
+.faqs__amazon::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    content: "\f08e";
     margin-left: 8px;
     color: black;
 }
@@ -638,6 +657,19 @@ footer::after {
 .lb-nav a.lb-prev,
 .lb-nav a.lb-next {
     opacity: 1;
+}
+
+.registry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.registry a {
+    color: black;
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
 }
 
 @media (min-width: 1025px){
