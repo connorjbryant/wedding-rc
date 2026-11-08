@@ -751,6 +751,11 @@ footer::after {
         overflow: hidden;
         position: relative;
     }
+
+    .main-hero__inner--content {
+        background-color: #ffffffe0;
+    }
+
     .main-hero__inner::before {
         background-image: url(images/Traditional-corner-ornament-filtered-mobile.jpg);
         top: 40%;
