@@ -527,12 +527,7 @@ aside.t-block:nth-child(1)::after {
     background: linear-gradient(top, #fff 1%, #eaeaea 100%);
 }
 
-.accordions a .accordion-women img {
-    width: 50%;
-    aspect-ratio: 9 / 16;
-}
-
-.accordions a .accordion-men img {
+.accordions a .accordion-image img {
     width: 50%;
     aspect-ratio: 16 / 9;
 }
