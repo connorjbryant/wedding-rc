@@ -815,6 +815,29 @@ footer::after {
 }
 
 @media (max-width: 480px){
+    .main-hero {
+        padding-top: 100px;
+    }
+
+    .main-hero::before {
+        background-size: 100% auto;
+        background-position: center bottom;
+        background-color: #aeadb3;
+    }
+
+    .main-hero__inner {
+        height: auto;
+        min-height: 575px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .main-hero__inner--content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
@@ -830,9 +853,5 @@ footer::after {
         display: block;
         white-space: nowrap;
         font-size: 0.9rem;
-    }
-
-    .main-hero__inner {
-        height: 900px;
     }
 }
