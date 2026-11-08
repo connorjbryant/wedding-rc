@@ -729,7 +729,7 @@ footer::after {
         position: relative;
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 0.5rem;
         list-style-type: none;
         padding: 1rem 0rem 1rem 0rem;
         margin: 0;
