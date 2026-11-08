@@ -831,4 +831,8 @@ footer::after {
         white-space: nowrap;
         font-size: 0.9rem;
     }
+
+    .main-hero__inner {
+        height: 900px;
+    }
 }
