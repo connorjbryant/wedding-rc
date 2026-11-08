@@ -735,6 +735,7 @@ footer::after {
         margin: 0;
         justify-content: space-between;
     }
+    
     .nav-menu::after {
         content: "";
         position: absolute;
@@ -810,5 +811,24 @@ footer::after {
     }
     .accordions a {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+    }
+
+    .nav-menu li {
+        flex: 0 1 auto;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        display: block;
+        white-space: nowrap;
+        font-size: 0.9rem;
     }
 }
