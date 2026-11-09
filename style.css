@@ -719,7 +719,7 @@ footer::after {
 
 @media (max-width: 1024px){
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         line-height: normal;
     }
     header {
@@ -841,6 +841,7 @@ footer::after {
     .main-hero__inner--content {
         width: 100%;
         margin: 0 auto;
+        gap: 0.5rem;
     }
 
     .nav-menu {
